@@ -74,4 +74,26 @@ IE는 요새 안쓰는 추세지만, 워낙 그 비중이 높았었기 때문에
 3. BSD 라이선스 : 명시만 하고 사용하시면 됩니다.
 4. Beerware 라이선스 : 만날 수 있으면 개발자한테 맥주 사줘용 (사실..ㅋㅋ 쓰세요)
 
-## 
+## VS code 시작
+1. 하나의 프로젝트는 하나의 폴더라고 생각합시다. 
+2. 그 안에 index.html을 만들어주세요. !를 눌러 기본 구조를 만들어 줍시다.
+- 브라우저가프로젝트 단위를 출력할 때 우선적으로 index.html을 우선적으로 찾아서 열어요.
+4. main.css 만들어주세요.
+5. Extension에서 Korean Language Pack for Visual Studio Code를 설치하시면 한글화 됩니다!
+6. Extension에서 beautify을 설치하면 코드 정리 깔끔!
+- 바로 가기 키 설정에서 HookyQR.beautify 검색 
+- Beautify selection에서 원하는 키 (보통 ctrl+alt+l)로 설정
+- 코드 정리 원하는 코드 블록 지정 후 단축키 누르면 코드 정리
+7. .vscode는 프로젝트 설정 관련이 들어있고 삭제해도 다시 생기고, .으로 시작해서 숨김 파일입니다.
+8. Extension에서 Auto Rename Tag 설치하면 태그 자동으로 잘 바뀜!
+9. Extension에서 live server 설치하면 브라우저에서 실행 화면 볼 수 있음!
+
+## VS code 유용한 단축키 (윈도우 기준이예요)
+|단축키|내용|
+|:---:|:----:|
+|ctrl+B|사이드바 열고 닫기|
+|ctrl+P|파일 검색|
+|ctrl+F|문자열 검색|
+|ctrl+H|문자열 대체|
+|alt+ down,up|행 위치 바꾸기|
+|ctrl+백슬래쉬|창 분할|
