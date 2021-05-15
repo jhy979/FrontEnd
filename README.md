@@ -97,3 +97,93 @@ IE는 요새 안쓰는 추세지만, 워낙 그 비중이 높았었기 때문에
 |ctrl+H|문자열 대체|
 |alt+ down,up|행 위치 바꾸기|
 |ctrl+백슬래쉬|창 분할|
+
+## HTML
+```html
+<!DOCTYPE html> 
+<html lang="en">
+
+  <head>
+
+  </head>
+
+  <body>
+
+  </body>
+
+</html>
+```
+### 1. 기본 구조
+
+```html 
+<!DOCTYPE html>
+```
+- 문서의 html 버전을 지정해요
+- HTML1 ~ HTML4 , XHTML, HTML5 (표준) 이렇게 있어요
+- 개발자가 브라우저에게 어떤 HTML 버전으로 해석할지 알려주는 거예요
+- 문서 열다가 html에서 안끝나고 PUBLIC ~~ 있으면 HTML5 표준이 아니고 XHTML
+```html 
+<html> </html>
+```
+- HTML이 어디서 시작하고 끝나는지 브라우저에게 알려주는 역할
+```html 
+<head> </head>
+```
+- 브라우저가 (눈에 안 보이는) 해석 해야하는 정보 (제목, 설명, 출력을 위한 파일의 위치, 스타일...)
+```html 
+<body> </body>
+```
+- 문서의 (눈에 보이는) 구조를 나타내는 범위 
+- 로고,헤더,푸터,내비게이션,메뉴,버튼,이미지....<br/><br/><br/>
+### 2. 한글 번역 문제
+```html <html lang="en"> ```
+- 구글 번역기 한국말로 바꾸세요 띄우기 싫어요-> en이 english 이므로 ko로 바꾸자!<br/><br/><br/>
+### 3. Head에서의 Tag
+#### 1) 외부파일 HTML에 연결 Link, Script
+```html
+ <link rel="stylesheet" href="./main.css">
+```
+ - __css와 html 연결하기__
+ - 헤드에 넣어줘요.
+ - css뿐만 아니라 외부 문서를 가져올 때에도 사용해요.
+ - rel = 에는 html과 가져올 문서와의 관계를 의미해요. stylesheet == css인거죠.
+```html 
+  <link rel="icon" href="./favicon.png">
+```
+ - rel = icon, stylesheet, ....  icon : 파비콘 ( 탭에 뜨는 페이지 대표 로고 )
+
+```html
+<script src = "./main.js"></script>
+```
+ - __js와 html 연결하기__
+ - 헤드에 넣어줘요
+ - src 속성으로 외부 js 파일 가져오기
+ - 아래처럼 js를 직접 html 내부에 작성할 수도 있음. 
+```html
+<script>
+  console.log('Hello World!')
+</script>
+```
+#### 2) title
+- HTML 문서 제목 
+#### 3) style
+```html
+<style> 
+  div {
+    color : red;
+  }
+</style>
+```
+- CSS를 HTML 안에서 직접 작성하는 태그입니다.
+#### 4) meta
+```html
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="author" content="GilDong" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+- 나머지 모든 정보들을 표시 (제작자, 내용, 키워드 ...) ----> 브라우저에게 제공
+- name 속성에 정보의 종류 author, viewport ...
+- content 속성에 실제 값 GilDong ....<br/>
+※ viewport는 모바일 장치에만 해당하는 거예요. 위의 코드는 가로는 장치에 맞게, 첫 배율은 1.0으로!<br/><br/><br/>
+
