@@ -202,8 +202,12 @@ IE는 요새 안쓰는 추세지만, 워낙 그 비중이 높았었기 때문에
 -  http 원격
 -  / 최상위 경로(root) (절대경로예요)
 -  // (즉, .없는 경우 절대 경로예요)
-
-### 6. 태그
+### 6. 웹에서 시작해보자
+1. codepen.io
+ - 코드 한줄을 위해 프로젝트 새로 만들기? 너무 번거롭죠?
+ - <a href=" codepen.io">codepen.io</a>에서 해봅시다.
+ - html, css, js 마다 preprocessor 전처리기를 제공합니다.
+### 7. 태그
 #### Image img
 ```html
 <img src= "./images/logo.png" alt="Can't rendering"/>
